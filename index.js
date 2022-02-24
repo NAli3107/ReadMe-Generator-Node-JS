@@ -7,6 +7,7 @@ Step 4: Write responses to files
 
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateNewReadMe = require("./ReadMe-template");
 
 
 const questions = () => {
