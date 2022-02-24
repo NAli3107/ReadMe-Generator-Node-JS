@@ -6,6 +6,8 @@ Step 4: Write responses to files
 */
 
 const inquirer = require("inquirer");
+const fs = require("fs");
+
 
 const questions = () => {
   return inquirer.prompt([
@@ -73,8 +75,17 @@ const questions = () => {
   ]);
 };
 
+const writeFile = (data) => {
+    try{
+        fs.writeFileSync('README.md', data);
+    } catch (error) {
+        console.log(error.message);
+    }
+};
+
 async function generateReadMe() {
-  console.log("hello world");
+  questions()
+  writeFile()
 }
 
 generateReadMe();
