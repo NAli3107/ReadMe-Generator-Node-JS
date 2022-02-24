@@ -7,7 +7,7 @@ Step 4: Write responses to files
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateNewReadMe = require("./ReadMe-template");
+let generateTemplate = require("./ReadMe-template.js");
 
 
 const questions = () => {
@@ -76,17 +76,26 @@ const questions = () => {
   ]);
 };
 
+
 const writeFile = (data) => {
     try{
-        fs.writeFileSync('README.md', data);
+        fs.writeFile('README.md', data);
     } catch (error) {
         console.log(error.message);
     }
 };
 
-async function generateReadMe() {
+const generateReadMe =() => {
   questions()
-  writeFile()
+  .then(answers => {
+      return generateTemplate(answers);
+  })
+  .then(data => {
+      return writeFile(data);
+  })
+  .catch(err => {
+      console.log(err)
+  })
 }
 
 generateReadMe();
