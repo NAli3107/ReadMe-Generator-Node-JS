@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator-node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NAli3107/ReadMe-Generator-Node-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NAli3107/ReadMe-Generator-Node-JS/issues"
+  },
+  "homepage": "https://github.com/NAli3107/ReadMe-Generator-Node-JS#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
