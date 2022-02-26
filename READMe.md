@@ -45,6 +45,7 @@ It will be named README.md.
 ## Examples
 
 Screenshot of Terminal:
+
 ![Terminal-Screenshot](https://user-images.githubusercontent.com/94486765/155859699-31bf25a4-1e04-4d78-9823-d0416756d0ea.png)
 
 Screenshot of README.md markup:
