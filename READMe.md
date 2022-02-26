@@ -5,7 +5,7 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Generated-README-Example](#example)
+- [Generated-README-Example](#examples)
 - [Contact Information](#contact)
 
 ## Description
@@ -42,7 +42,7 @@ Licensing Options: list of options
 Once you have answered all the questions a markdown page will be generated for you!
 It will be named README.md.
 
-## Examples - What to Expect:
+## Examples
 
 Screenshot of Terminal:
 
