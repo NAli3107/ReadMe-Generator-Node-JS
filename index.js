@@ -68,18 +68,20 @@ const questions = () => {
   ]);
 };
 
+// Saves information onto a file using fs and generates file if one does not exist yet.
 const writeFile = (fileName, data) => {
   try {
-    fs.writeFileSync(path.join(process.cwd(),fileName), data);
+    fs.writeFileSync(path.join(process.cwd(), fileName), data);
   } catch (error) {
     console.log(error.message);
   }
 };
 
+// Function to populate generated ReadMe file with user's input from prompts.
 const generateReadMe = () => {
   questions()
     .then((answers) => {
-      return writeFile("./build/README.md", generateTemplate({...answers}));
+      return writeFile("./build/README.md", generateTemplate({ ...answers }));
     })
     .catch((err) => {
       console.log(err);
