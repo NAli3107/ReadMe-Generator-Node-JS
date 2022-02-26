@@ -60,6 +60,6 @@ Email Address: Nadiraali188a@gmail.com
 
 Linkedin Profile: [LinkedIn](https://www.linkedin.com/in/nadira-ali-09a182106/)
 
-[Github Profile](https://github.com/NAli3107)
+Github: [Profile](https://github.com/NAli3107)
 
-[Github Repo](https://github.com/NAli3107/ReadMe-Generator-Node-JS)
+Github: [Repo](https://github.com/NAli3107/ReadMe-Generator-Node-JS)
