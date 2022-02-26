@@ -8,7 +8,7 @@ const questions = () => {
     {
       // Prompts to take user input for specific readMe file information.
       type: "input",
-      name: "username",
+      name: "github",
       message: "Please enter your Github Username.",
     },
     {

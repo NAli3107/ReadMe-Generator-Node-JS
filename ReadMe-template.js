@@ -23,7 +23,7 @@ const renderLicenseSection = function (license) {
   }
 };
 
-const renderReadmeTemplate = function (questions) {
+function renderReadmeTemplate (questions) {
   return `# ${questions.title}
   
   ${renderLicenseBadge(questions.license)}
@@ -31,25 +31,28 @@ const renderReadmeTemplate = function (questions) {
   ## Description 
     ${questions.description}
 
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    ${renderLicenseLink(questions.license)}
-    * [Questions](#questions)
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  ${renderLicenseLink(questions.license)}
+  * [Questions](#questions)
 
     ## Installation 
-    Run the following script to install the packages required for the application:${questions.installation}
+    Run the following script to install the packages required for the application:
+    ${questions.installation}
 
     ## Usage 
-    To use the application run the following script:${questions.usage}
+    To use the application run the following script:
+    ${questions.usage}
 
     ## Contributing 
     ${questions.contribution}
     
     ## Tests
-    To use the application run the following script:${questions.tests}
+    To use the application run the following script:
+    ${questions.tests}
 
     ${renderLicenseSection(questions.license)}
 
