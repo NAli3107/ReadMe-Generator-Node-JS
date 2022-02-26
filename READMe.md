@@ -50,7 +50,9 @@ Screenshot of Terminal:
 
 Screenshot of README.md markup:
 
-[README-Generator-GIF]
+README Generator GIF:
+
+<img src="./images/README.md GIF.gif">
 
 [README Generator Video Link](https://drive.google.com/file/d/1WjxIBRbs6rM8R9cEYDxFxH6SQ2nMQSYo/view)
 
