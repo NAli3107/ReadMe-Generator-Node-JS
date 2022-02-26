@@ -48,8 +48,6 @@ Screenshot of Terminal:
 
 ![Terminal-Screenshot](https://user-images.githubusercontent.com/94486765/155859699-31bf25a4-1e04-4d78-9823-d0416756d0ea.png)
 
-Screenshot of README.md markup:
-
 README Generator GIF:
 
 <img src="./images/README.md GIF.gif">
@@ -59,6 +57,8 @@ README Generator GIF:
 ## Contact
 
 Email Address: Nadiraali188a@gmail.com
+
+Linkedin Profile: [LinkedIn](https://www.linkedin.com/in/nadira-ali-09a182106/)
 
 [Github Profile](https://github.com/NAli3107)
 
