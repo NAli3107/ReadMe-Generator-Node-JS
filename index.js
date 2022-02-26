@@ -1,14 +1,7 @@
-/*
-Step 1: Set up inquirer function.
-Step 2: Produce array of questions for users.
-Step 3: Generate answers from users.
-Step 4: Write responses to files
-*/
-
 const inquirer = require("inquirer");
 const fs = require("fs");
+const path = require("path");
 let generateTemplate = require("./ReadMe-template.js");
-
 
 const questions = () => {
   return inquirer.prompt([
@@ -21,7 +14,7 @@ const questions = () => {
     {
       type: "input",
       name: "email",
-      message: "Please enter your email address",
+      message: "Please enter your email address.",
     },
     {
       type: "input",
@@ -55,11 +48,10 @@ const questions = () => {
     },
     {
       // Takes user input via checkbox using space-bar to add choice and up and down keys to move down list
-      type: "checkbox",
+      type: "list",
       message: "Licensing Options",
       name: "license",
       choices: [
-        "None",
         "Apache2.0",
         "GNU Public v3.0",
         "MIT",
@@ -70,32 +62,28 @@ const questions = () => {
         "GNU General Public v2.0",
         "GNU Lesser General Public v2.1",
         "Mozilla Public 2.0",
-        "the Unilicense",
+        "No license",
       ],
     },
   ]);
 };
 
-
-const writeFile = (data) => {
-    try{
-        fs.writeFile('README.md', data);
-    } catch (error) {
-        console.log(error.message);
-    }
+const writeFile = (fileName, data) => {
+  try {
+    fs.writeFileSync(path.join(process.cwd(),fileName), data);
+  } catch (error) {
+    console.log(error.message);
+  }
 };
 
-const generateReadMe =() => {
+const generateReadMe = () => {
   questions()
-  .then(answers => {
-      return generateTemplate(answers);
-  })
-  .then(data => {
-      return writeFile(data);
-  })
-  .catch(err => {
-      console.log(err)
-  })
-}
+    .then((answers) => {
+      return writeFile("./build/README.md", generateTemplate({...answers}));
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
 
 generateReadMe();
