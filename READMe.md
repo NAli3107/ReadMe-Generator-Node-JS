@@ -50,7 +50,7 @@ Screenshot of Terminal:
 
 Screenshot of README.md markup:
 
-![README Generator Video Link](https://drive.google.com/file/d/1WjxIBRbs6rM8R9cEYDxFxH6SQ2nMQSYo/view)
+[README Generator Video Link](https://drive.google.com/file/d/1WjxIBRbs6rM8R9cEYDxFxH6SQ2nMQSYo/view)
 
 ## Contact
 
